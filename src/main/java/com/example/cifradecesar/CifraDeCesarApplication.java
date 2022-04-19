@@ -22,8 +22,8 @@ public class CifraDeCesarApplication {
         System.out.println("Insira a string desejada: ");
         char[] palavra = scanner.nextLine().toLowerCase().replaceAll("\\p{Punct}", "")
                 .replaceAll("á|à|â|ã|ä", "a")
-                .replaceAll("é|è|ê|ë", "e").replaceAll("Ì|Í|Î|Ï", "i")
-                .replaceAll("Ò|Ó|Ô|Õ|Ö", "o").replaceAll("Ù|Ú|Û|Ü", "u")
+                .replaceAll("é|è|ê|ë", "e").replaceAll("ì|í|î|ï", "i")
+                .replaceAll("ò|ó|ô|õ|ö", "o").replaceAll("ù|ú|û|ü", "u")
                 .toCharArray();
         System.out.println("Insira a chave desejada: ");
         int chave = scanner.nextInt();
