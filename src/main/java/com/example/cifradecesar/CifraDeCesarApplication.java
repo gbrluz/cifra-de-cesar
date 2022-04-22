@@ -20,9 +20,9 @@ public class CifraDeCesarApplication {
 
         System.out.println("Insira a string desejada: ");
         char[] palavra = scanner.nextLine().toLowerCase().replaceAll("\\p{Punct}", "")
-                .replaceAll("á|à|â|ã|ä", "a")
-                .replaceAll("é|è|ê|ë", "e").replaceAll("ì|í|î|ï", "i")
-                .replaceAll("ò|ó|ô|õ|ö", "o").replaceAll("ù|ú|û|ü", "u")
+                .replaceAll("[áàâãä]", "a")
+                .replaceAll("[éèêë]", "e").replaceAll("[ìíîï]", "i")
+                .replaceAll("[òóôõö]", "o").replaceAll("[ùúûü]", "u")
                 .toCharArray();
         System.out.println("Insira a chave desejada: ");
         int chave = scanner.nextInt();
